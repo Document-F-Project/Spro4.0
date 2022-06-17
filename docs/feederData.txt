@@ -1,0 +1,306 @@
+function inputRelaHandle(from, to, type, func, addition, multiple, tmpId, container) {
+    var val = jQuery(from).val();
+    if ("user" == type) {
+        if ("getAllUsers" == func && multiple) {
+            jQuery.ajax({
+                url: contextPath + "/rest/sms/latest/ticket/data/membersOfGroup",
+                type: "GET",
+                dataType: 'json',
+                cache: true,
+                data: {
+                    mailgroup: val
+                },
+                async: false
+            }).done(function (data) {
+                var values = "";
+                for (var i = 0; i < data.length; i++) {
+                    values += data[i].toLowerCase();
+                    if (i < data.length - 1) {
+                        values += ",";
+                    }
+                }
+                jQuery(to).val(values).trigger("change");
+            });
+        } else if ("getApprover" == func && !multiple) {
+            jQuery.ajax({
+                url: contextPath + "/rest/sms/latest/ticket/data/approverOfGroup",
+                type: "GET",
+                dataType: 'json',
+                cache: true,
+                data: {
+                    mailgroup: val
+                },
+                async: false
+            }).done(function (data) {
+                var values = data.key;
+                jQuery(to).val(values).trigger("change");
+            }).fail(function () {
+                var tmpFlag = findByAttributeReturnIndex(currentTicketDetail.individual, "id", tmpId);
+                updateTicketOwnerToTicketDetail(tmpFlag[0]);
+                jQuery.ajax({
+                    url: "/rest/sms/latest/ssc01-create-ticket/get-approver",
+                    type: "POST",
+                    dataType: 'json',
+                    data: {
+                        objectjson: JSON.stringify(currentTicketDetail.individual[tmpFlag[0]])
+                    },
+                    cache: true,
+                    async: false
+                }).done(function (res) {
+                    if (typeof (res.data) != "undefined") {
+                        jQuery(to).val(res.data.toLowerCase()).trigger("change");
+                    }
+                });
+            });
+        } else if ("getOwner" == func && !multiple) {
+            jQuery.ajax({
+                url: contextPath + "/rest/sms/latest/ticket/data/approverOfGroup",
+                type: "GET",
+                dataType: 'json',
+                cache: true,
+                data: {
+                    mailgroup: val
+                },
+                async: false
+            }).done(function (data) {
+                var values = data.key;
+                jQuery(to).val(values).trigger("change");
+            });
+        }
+    } else if ("approvers" == type) {
+        jQuery(to).attr('group-name', val);
+        SMS.Pickers.approversInit();
+    } else if ("approvers2" == type) {
+        jQuery(to).attr('group-name', val);
+        SMS.Pickers.approversPickerInit();
+    } else if ("text" == type) {
+        if ("convertNumberToWords" == func) {
+            var value = val.replace(/[^\d\.]+/g, '');
+            var valueTmp = convertNumberToWords(value) + ' ';
+            var additionValue = addition != undefined && addition != null ? addition.val() : '';
+            if (valueTmp != '') {
+                valueTmp += ' ' + additionValue != undefined && additionValue != '' ? additionValue : 'VN đồng';
+            } else {
+                valueTmp += additionValue != undefined && additionValue != '' ? additionValue : 'VN đồng';
+            }
+            jQuery(to).val(valueTmp).trigger("change");
+        }
+    } else if ("finance" == type && "feederData" != func) {
+        jQuery(to).closest("span").find('.sms-finance-trigger').val(val).trigger("input");
+    }
+
+    if ("feederData" == func) {
+        var individual;
+        if (container == '#ticketDetailInfo' || container == '#detailInformationOfTicket') {
+            if (typeof currentTicketDetail != 'undefined') {
+                individual = currentTicketDetail.individual;
+            } else if (typeof ticketDetailJson != 'undefined') {
+                individual = ticketDetailJson.individual;
+            } else if (typeof detailInfo != 'undefined') {
+                individual = detailInfo.individual;
+            }
+        } else if (container.startsWith("#relationshipoutputDetail")) {
+            var relaId = container.replace("#relationshipoutputDetail", "");
+            var searchRela = jQuery.grep(relationships, function (n) {
+                var id = n.id;
+                return id == relaId;
+            });
+
+            if (searchRela.length > 0 && searchRela[0].detail != undefined && searchRela[0].detail.individual != undefined) {
+                individual = searchRela[0].detail.individual;
+            }
+        }
+        if (individual != undefined && individual.length > 0) {
+            var searchIndi = jQuery.grep(individual, function (n) {
+                var id = n.id;
+                var definedId = n.definedId;
+                return id == tmpId || definedId == tmpId;
+            });
+
+            if (searchIndi.length > 0) {
+                var conditions = searchIndi[0].dataFromCondition;
+                if (conditions != undefined && conditions != null && conditions.length > 0) {
+                    for (var i = 0; i < conditions.length; i++) {
+                        if (checkCondition(conditions[i].conditions, individual, container)) {
+                            var value = getValueData(individual, conditions[i].value, container);
+
+                            if (jQuery(to).data('select2')) {
+                                jQuery(to).select2("val", value).trigger("change");
+                            }
+                            if ("finance" == type) {
+                                jQuery(to).closest("span").find('.sms-finance-trigger').val(value).trigger("input");
+                            } else {
+                                jQuery(to).val(value).trigger("change");
+                            }
+
+                            if (jQuery(to).attr("itemtype") != undefined && jQuery(to).attr("itemtype").startsWith("master_data_")) {
+                                setTimeout(function () {
+                                    jQuery(to).trigger("click");
+                                }, 50);
+                            }
+
+                            break;
+                        }
+                    }
+                }
+            }
+        } else {
+            // console.log("individual is null");
+        }
+    }
+}
+
+
+function checkCondition(conditions, individual, container) {
+    var result = false;
+    var operation = conditions.operation;
+    if ("else" == operation) {
+        return true;
+    } else if (("and" == operation || "or" == operation)
+        && conditions.items != undefined) {
+        var items = conditions.items;
+        var checkTmp = null;
+        for (var i = 0; i < items.length; i++) {
+            if (checkTmp == null) {
+                checkTmp = checkCondition(items[i], individual, container);
+            } else {
+                if ("and" == operation) {
+                    checkTmp = checkTmp
+                        && checkCondition(items[i], individual, container);
+                } else if ("or" == operation) {
+                    checkTmp = checkTmp
+                        || checkCondition(items[i], individual, container);
+                }
+            }
+        }
+        if (checkTmp != null) {
+            result = checkTmp;
+        }
+    } else {
+        var compareType = conditions["compare-type"];
+        var leftElement = conditions["left-element"];
+        var rightElement = conditions["right-element"];
+        leftElement.name = "leftElement";
+        ;
+        rightElement.name = "rightElement";
+        var lstElements = new Array();
+        lstElements.push(leftElement);
+        lstElements.push(rightElement);
+        var mpValues = getParamData(individual, lstElements, container);
+        var leftValue = mpValues.leftElement;
+        var rightValue = mpValues.rightElement;
+        if ("number" == compareType) {
+            var floatLeftVal = parseFloat(replaceAllString(leftValue, ",", "").trim());
+            var floatRightVal = parseFloat(replaceAllString(rightValue, ",", "").trim());
+            if (operation == "equal") {
+                if (floatLeftVal == floatRightVal) {
+                    return true;
+                }
+            } else if (operation == "notEqual") {
+                if (floatLeftVal != floatRightVal) {
+                    return true;
+                }
+            } else if (operation == "greaterOrEqual") {
+                if (floatLeftVal >= floatRightVal) {
+                    return true;
+                }
+            } else if (operation == "lessOrEqual") {
+                if (floatLeftVal <= floatRightVal) {
+                    return true;
+                }
+            } else if (operation == "less") {
+                if (floatLeftVal < floatRightVal) {
+                    return true;
+                }
+            } else if (operation == "greater") {
+                if (floatLeftVal > floatRightVal) {
+                    return true;
+                }
+            }
+        } else if ("text" == compareType) {
+            if (operation == "equal") {
+                if (leftValue != undefined && rightValue != undefined && leftValue.toString().toLowerCase().trim() == rightValue.toString().toLowerCase().trim()) {
+                    return true;
+                }
+            } else if (operation == "notEqual") {
+                if (leftValue != undefined && rightValue != undefined && leftValue.toString().toLowerCase().trim() != rightValue.toString().toLowerCase().trim()) {
+                    return true;
+                }
+            }
+        }
+    }
+
+    return result;
+}
+
+function getParamData(individual, lstElements, container) {
+    var result = {};
+    for (var i = 0; i < lstElements.length; i++) {
+        elem = lstElements[i];
+        if (elem.dataset == "value") {
+            result[elem.name] = elem.value;
+        } else if (elem.dataset == "INDIVIDUAL") {
+            var finalIndividual;
+
+            if (elem.relaId != undefined && elem.relaId != null) {
+                var searchRela = jQuery.grep(relationships, function (n) {
+                    var definedId = n.definedId;
+                    return definedId == elem.relaId;
+                });
+
+                if (searchRela.length > 0 && searchRela[0].detail != undefined && searchRela[0].detail.individual != undefined) {
+                    finalIndividual = searchRela[0].detail.individual;
+                }
+            } else {
+                finalIndividual = individual;
+            }
+
+            if (finalIndividual != undefined && finalIndividual != null) {
+                var searchIndi = jQuery.grep(finalIndividual, function (n) {
+                    var id = n.id;
+                    var definedId = n.definedId;
+                    return id == elem.infoId || definedId == elem.infoId;
+                });
+                if (searchIndi.length > 0) {
+                    if (jQuery(searchIndi[0]).attr('itemtype') == 'checkbox') {
+                        result[elem.name] = searchIndi[0].value;
+                    } else {
+                        result[elem.name] = searchIndi[0].value;
+                    }
+                } else {
+                    result[elem.name] = "";
+                }
+            } else {
+                console.log("cannot find individual");
+                console.log(elem);
+            }
+        } else {
+            result[elem.name] = "";
+        }
+    }
+
+    return result;
+}
+
+function getValueData(individual, elem, container) {
+    if (elem.dataset == undefined) {
+        return elem;
+    } else {
+        if (elem.dataset == "value") {
+            return elem.value;
+        } else if (elem.dataset == "INDIVIDUAL") {
+            var searchIndi = jQuery.grep(individual, function (n) {
+                var id = n.id;
+                var definedId = n.definedId;
+                return id == elem.infoId || definedId == elem.infoId;
+            });
+            if (searchIndi.length > 0) {
+                return searchIndi[0].value;
+            } else {
+                return "";
+            }
+        } else {
+            return "";
+        }
+    }
+}

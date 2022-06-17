@@ -1,0 +1,4 @@
+curl --location --request GET 'https://sohoaquytrinh.npc.com.vn/rest/sms/latest/integration-my-approval/listHaftTime?statusType=approved&pageSize=10&page=1&asc=1&requestTypeFilter=&idFilter=&subjectFilter=&catalogRootTypeFilter=' \
+--header 'Content-Type: application/json' \
+--header 'S-Token: 116750e9-677d-42b3-8c11-8c6ea6be7e20' \
+--header 'Cookie: BNES_XSRF-TOKEN=74cLNlK2k8MTfKJMyx/U8A6Hf+RUP/NMyolun2D6cLVB8xpv86fHis90+Qi169tAJV05s0hbKmGeeo4rxM09KuKFxAqYzgKbG61coQFBLSo=; XSRF-TOKEN=2ac96de6-fa44-484f-8604-dfea5b32fee1; BNES_XSRF-TOKEN=89WYVc58i5+FX3tcSwiQ1M0Eysq4Cndl11aE7j/4f2FK+9NyIdZlM9KLAx5fIrTMiYoFuzqLuPauBJ8Jud+LMMCBpKvAqp5V1DgPeoEG77g='

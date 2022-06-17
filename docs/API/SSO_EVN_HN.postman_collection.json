@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "c42d31d8-42e4-4f5c-a08e-1930ad3b891e",
+		"name": "SSO EVN HN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SSO UAT Login",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"admin\",\n    \"password\": \"fpt@2021\",\n    \"ipAddress\": \"1.1.1.1\",\n    \"appId\": 0,\n    \"redirectUrl\": \"null\",\n    \"authMethod\": \"JWT\"\n}"
+				},
+				"url": {
+					"raw": "http://10.9.125.79:1111/sso/login",
+					"protocol": "http",
+					"host": [
+						"10",
+						"9",
+						"125",
+						"79"
+					],
+					"port": "1111",
+					"path": [
+						"sso",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET TOKEN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "ADMIN",
+							"type": "text"
+						},
+						{
+							"key": "groupName",
+							"value": "UAT",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://10.9.125.100/rest/sms/latest/integration-user/serviceValidateEvn",
+					"protocol": "http",
+					"host": [
+						"10",
+						"9",
+						"125",
+						"100"
+					],
+					"path": [
+						"rest",
+						"sms",
+						"latest",
+						"integration-user",
+						"serviceValidateEvn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get data in app",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "S-Token",
+						"value": "token",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://10.9.125.100/rest/sms/latest/integration-my-execution/totalSummary",
+					"protocol": "http",
+					"host": [
+						"10",
+						"9",
+						"125",
+						"100"
+					],
+					"path": [
+						"rest",
+						"sms",
+						"latest",
+						"integration-my-execution",
+						"totalSummary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Xac thuc serviceTicket",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://10.15.152.26:11111/sso/serviceValidate?ticket=123213&appCode=SPRO_IHRMS",
+					"protocol": "http",
+					"host": [
+						"10",
+						"15",
+						"152",
+						"26"
+					],
+					"port": "11111",
+					"path": [
+						"sso",
+						"serviceValidate"
+					],
+					"query": [
+						{
+							"key": "ticket",
+							"value": "123213"
+						},
+						{
+							"key": "appCode",
+							"value": "SPRO_IHRMS"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

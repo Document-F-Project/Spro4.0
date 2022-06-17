@@ -1,0 +1,22 @@
+curl --location --request POST 'https://fcm.googleapis.com/fcm/send' \
+--header 'Authorization: key=AAAACXHNf_o:APA91bFv1tnUtZpwNtiupYP3LekDw4zAY5N639MLKEcc9eHmqdJ6eZaEPGsQWY7zBW6an0n0pXgCdb7CN3V_28iyrEUlJtItH0YzAgDYIgCgk4nhkicD3Tp0c3Ykzbs0BYTtAiW7fJLg' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "to":"e-HYmYjjNkCNsfAPqak0WF:APA91bHWcKWEOxqKcRstW9RmWDTroVAtcITNATsTv6eiP8jfCFLWUddYmzxtPO5cBA8hmW4FSpTGZk1wcUcCOoDVdAh9TKW9Pp_i7cd68AMS_pOCDH_IFLKOuftMaHVVkqIKI8rsbeY-",
+    "notification": {
+        "id": "",
+        "body": "Đây là đoạn message của notifiation",
+        "title": "Đây là title của noti1",
+        "image": "Đây là url của hình ảnh đính kèm",
+        "sound": "default"
+    },
+    "data": {
+        "notiId": "",
+        "ticketId": "542",
+        "group": "execution",
+        "phaseId": "4230",
+        "status" : "ongoing",
+        "approvalId":"",
+        "taskID" : ""
+    }
+}'

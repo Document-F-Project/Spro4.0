@@ -1,0 +1,3910 @@
+{
+	"info": {
+		"_postman_id": "6a981ae3-00b3-4343-9aba-0365ea1b9c99",
+		"name": "SFLASH",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Reopen",
+			"item": [
+				{
+					"name": "Reopen",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODciLCJqdGkiOiIiLCJpYXQiOjE2MDgwMDQ1NTksImV4cCI6MTYwODA5MDk1OX0.xx0D0rHQPX4d3ovVJinT3DM4yJG7JUstR92QIUaQFyJrv1aeTkbN-JBeHzsvXj5aDXFlBWSnbfIUqsIpF47h_g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/report/getObjectReopen_mobile?fromDate=2020-11-13%2000:00:00&toDate=2020-12-13%2017:55:47",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"report",
+								"getObjectReopen_mobile"
+							],
+							"query": [
+								{
+									"key": "fromDate",
+									"value": "2020-11-13%2000:00:00"
+								},
+								{
+									"key": "toDate",
+									"value": "2020-12-13%2017:55:47"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReopenByOwner",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODciLCJqdGkiOiIiLCJpYXQiOjE2MDgwMDQ1NTksImV4cCI6MTYwODA5MDk1OX0.xx0D0rHQPX4d3ovVJinT3DM4yJG7JUstR92QIUaQFyJrv1aeTkbN-JBeHzsvXj5aDXFlBWSnbfIUqsIpF47h_g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/report/getObjectReopenByOwner_mobile?fromDate=2020-11-13%2000:00:00&toDate=2020-12-13%2017:55:47",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"report",
+								"getObjectReopenByOwner_mobile"
+							],
+							"query": [
+								{
+									"key": "fromDate",
+									"value": "2020-11-13%2000:00:00"
+								},
+								{
+									"key": "toDate",
+									"value": "2020-12-13%2017:55:47"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReopenByAssigner",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODciLCJqdGkiOiIiLCJpYXQiOjE2MDgwMDQ1NTksImV4cCI6MTYwODA5MDk1OX0.xx0D0rHQPX4d3ovVJinT3DM4yJG7JUstR92QIUaQFyJrv1aeTkbN-JBeHzsvXj5aDXFlBWSnbfIUqsIpF47h_g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/report/getObjectReopenByAssigner_mobile?fromDate=2020-11-13%2000:00:00&toDate=2020-12-13%2017:55:47",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"report",
+								"getObjectReopenByAssigner_mobile"
+							],
+							"query": [
+								{
+									"key": "fromDate",
+									"value": "2020-11-13%2000:00:00"
+								},
+								{
+									"key": "toDate",
+									"value": "2020-12-13%2017:55:47"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReopenByFollower",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODciLCJqdGkiOiIiLCJpYXQiOjE2MDgwMDQ1NTksImV4cCI6MTYwODA5MDk1OX0.xx0D0rHQPX4d3ovVJinT3DM4yJG7JUstR92QIUaQFyJrv1aeTkbN-JBeHzsvXj5aDXFlBWSnbfIUqsIpF47h_g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/report/getObjectReopenByFollower_mobile?fromDate=2020-11-13%2000:00:00&toDate=2020-12-13%2017:55:47",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"report",
+								"getObjectReopenByFollower_mobile"
+							],
+							"query": [
+								{
+									"key": "fromDate",
+									"value": "2020-11-13%2000:00:00"
+								},
+								{
+									"key": "toDate",
+									"value": "2020-12-13%2017:55:47"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "On Going",
+			"item": [
+				{
+					"name": "OnGoingByFollower",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODciLCJqdGkiOiIiLCJpYXQiOjE2MDgwMDQ1NTksImV4cCI6MTYwODA5MDk1OX0.xx0D0rHQPX4d3ovVJinT3DM4yJG7JUstR92QIUaQFyJrv1aeTkbN-JBeHzsvXj5aDXFlBWSnbfIUqsIpF47h_g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/report/getObjectAcceptByFollower_mobile?fromDate=2020-11-13%2000:00:00&toDate=2020-12-13%2017:55:47",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"report",
+								"getObjectAcceptByFollower_mobile"
+							],
+							"query": [
+								{
+									"key": "fromDate",
+									"value": "2020-11-13%2000:00:00"
+								},
+								{
+									"key": "toDate",
+									"value": "2020-12-13%2017:55:47"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OnGoingByAssigner",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODciLCJqdGkiOiIiLCJpYXQiOjE2MDgwMDQ1NTksImV4cCI6MTYwODA5MDk1OX0.xx0D0rHQPX4d3ovVJinT3DM4yJG7JUstR92QIUaQFyJrv1aeTkbN-JBeHzsvXj5aDXFlBWSnbfIUqsIpF47h_g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/report/getObjectAcceptByAssigner_mobile?fromDate=2020-11-13%2000:00:00&toDate=2020-12-13%2017:55:47",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"report",
+								"getObjectAcceptByAssigner_mobile"
+							],
+							"query": [
+								{
+									"key": "fromDate",
+									"value": "2020-11-13%2000:00:00"
+								},
+								{
+									"key": "toDate",
+									"value": "2020-12-13%2017:55:47"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OnGoingByOwner",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODciLCJqdGkiOiIiLCJpYXQiOjE2MDgwMDQ1NTksImV4cCI6MTYwODA5MDk1OX0.xx0D0rHQPX4d3ovVJinT3DM4yJG7JUstR92QIUaQFyJrv1aeTkbN-JBeHzsvXj5aDXFlBWSnbfIUqsIpF47h_g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/report/getObjectAcceptByOwner_mobile?fromDate=2020-11-13%2000:00:00&toDate=2020-12-13%2017:55:47",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"report",
+								"getObjectAcceptByOwner_mobile"
+							],
+							"query": [
+								{
+									"key": "fromDate",
+									"value": "2020-11-13%2000:00:00"
+								},
+								{
+									"key": "toDate",
+									"value": "2020-12-13%2017:55:47"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OnGoing",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/report/getObjectAccept_mobile?fromDate=25-03-2021&toDate=27-03-2021&type=ALL",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"report",
+								"getObjectAccept_mobile"
+							],
+							"query": [
+								{
+									"key": "fromDate",
+									"value": "25-03-2021"
+								},
+								{
+									"key": "toDate",
+									"value": "27-03-2021"
+								},
+								{
+									"key": "type",
+									"value": "ALL"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Overdue",
+			"item": [
+				{
+					"name": "Overdue",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODciLCJqdGkiOiIiLCJpYXQiOjE2MDgwMDQ1NTksImV4cCI6MTYwODA5MDk1OX0.xx0D0rHQPX4d3ovVJinT3DM4yJG7JUstR92QIUaQFyJrv1aeTkbN-JBeHzsvXj5aDXFlBWSnbfIUqsIpF47h_g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/report/getObjectOverdue_mobile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"report",
+								"getObjectOverdue_mobile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OverdueByOwner",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODciLCJqdGkiOiIiLCJpYXQiOjE2MDgwMDQ1NTksImV4cCI6MTYwODA5MDk1OX0.xx0D0rHQPX4d3ovVJinT3DM4yJG7JUstR92QIUaQFyJrv1aeTkbN-JBeHzsvXj5aDXFlBWSnbfIUqsIpF47h_g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/report/getObjectOverdueByOwner_mobile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"report",
+								"getObjectOverdueByOwner_mobile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OverdueByAssigner",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODciLCJqdGkiOiIiLCJpYXQiOjE2MDgwMDQ1NTksImV4cCI6MTYwODA5MDk1OX0.xx0D0rHQPX4d3ovVJinT3DM4yJG7JUstR92QIUaQFyJrv1aeTkbN-JBeHzsvXj5aDXFlBWSnbfIUqsIpF47h_g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/report/getObjectOverdueByAssigner_mobile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"report",
+								"getObjectOverdueByAssigner_mobile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OverdueByFollower",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODciLCJqdGkiOiIiLCJpYXQiOjE2MDgwMDQ1NTksImV4cCI6MTYwODA5MDk1OX0.xx0D0rHQPX4d3ovVJinT3DM4yJG7JUstR92QIUaQFyJrv1aeTkbN-JBeHzsvXj5aDXFlBWSnbfIUqsIpF47h_g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/report/getObjectOverdueByFollower_mobile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"report",
+								"getObjectOverdueByFollower_mobile"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Issue",
+			"item": [
+				{
+					"name": "Issue",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODciLCJqdGkiOiIiLCJpYXQiOjE2MDgwMDQ1NTksImV4cCI6MTYwODA5MDk1OX0.xx0D0rHQPX4d3ovVJinT3DM4yJG7JUstR92QIUaQFyJrv1aeTkbN-JBeHzsvXj5aDXFlBWSnbfIUqsIpF47h_g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/report/getObjectIssue_mobile?fromDate=2020-11-13%2000:00:00&toDate=2020-12-13%2017:55:47",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"report",
+								"getObjectIssue_mobile"
+							],
+							"query": [
+								{
+									"key": "fromDate",
+									"value": "2020-11-13%2000:00:00"
+								},
+								{
+									"key": "toDate",
+									"value": "2020-12-13%2017:55:47"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "IssueByOwner",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODciLCJqdGkiOiIiLCJpYXQiOjE2MDgwMDQ1NTksImV4cCI6MTYwODA5MDk1OX0.xx0D0rHQPX4d3ovVJinT3DM4yJG7JUstR92QIUaQFyJrv1aeTkbN-JBeHzsvXj5aDXFlBWSnbfIUqsIpF47h_g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/report/getObjectIssueByOwner_mobile?fromDate=2020-11-13%2000:00:00&toDate=2020-12-13%2017:55:47",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"report",
+								"getObjectIssueByOwner_mobile"
+							],
+							"query": [
+								{
+									"key": "fromDate",
+									"value": "2020-11-13%2000:00:00"
+								},
+								{
+									"key": "toDate",
+									"value": "2020-12-13%2017:55:47"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "IssueByAssigner",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODciLCJqdGkiOiIiLCJpYXQiOjE2MDgwMDQ1NTksImV4cCI6MTYwODA5MDk1OX0.xx0D0rHQPX4d3ovVJinT3DM4yJG7JUstR92QIUaQFyJrv1aeTkbN-JBeHzsvXj5aDXFlBWSnbfIUqsIpF47h_g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/report/getObjectIssueByAssigner_mobile?fromDate=2020-11-13%2000:00:00&toDate=2020-12-13%2017:55:47",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"report",
+								"getObjectIssueByAssigner_mobile"
+							],
+							"query": [
+								{
+									"key": "fromDate",
+									"value": "2020-11-13%2000:00:00"
+								},
+								{
+									"key": "toDate",
+									"value": "2020-12-13%2017:55:47"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "IssueByFollower",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODciLCJqdGkiOiIiLCJpYXQiOjE2MDgwMDQ1NTksImV4cCI6MTYwODA5MDk1OX0.xx0D0rHQPX4d3ovVJinT3DM4yJG7JUstR92QIUaQFyJrv1aeTkbN-JBeHzsvXj5aDXFlBWSnbfIUqsIpF47h_g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/report/getObjectIssueByFollower_mobile?fromDate=2020-11-13%2000:00:00&toDate=2020-12-13%2017:55:47",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"report",
+								"getObjectIssueByFollower_mobile"
+							],
+							"query": [
+								{
+									"key": "fromDate",
+									"value": "2020-11-13%2000:00:00"
+								},
+								{
+									"key": "toDate",
+									"value": "2020-12-13%2017:55:47"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cancel",
+			"item": [
+				{
+					"name": "CancelByFollower",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODciLCJqdGkiOiIiLCJpYXQiOjE2MDgwMDQ1NTksImV4cCI6MTYwODA5MDk1OX0.xx0D0rHQPX4d3ovVJinT3DM4yJG7JUstR92QIUaQFyJrv1aeTkbN-JBeHzsvXj5aDXFlBWSnbfIUqsIpF47h_g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/report/getObjectCancelByFollower_mobile?fromDate=2020-11-13%2000:00:00&toDate=2020-12-13%2017:55:47",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"report",
+								"getObjectCancelByFollower_mobile"
+							],
+							"query": [
+								{
+									"key": "fromDate",
+									"value": "2020-11-13%2000:00:00"
+								},
+								{
+									"key": "toDate",
+									"value": "2020-12-13%2017:55:47"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CancelByAssigner",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODciLCJqdGkiOiIiLCJpYXQiOjE2MDgwMDQ1NTksImV4cCI6MTYwODA5MDk1OX0.xx0D0rHQPX4d3ovVJinT3DM4yJG7JUstR92QIUaQFyJrv1aeTkbN-JBeHzsvXj5aDXFlBWSnbfIUqsIpF47h_g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/report/getObjectCancelByAssigner_mobile?fromDate=2020-11-13%2000:00:00&toDate=2020-12-13%2017:55:47",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"report",
+								"getObjectCancelByAssigner_mobile"
+							],
+							"query": [
+								{
+									"key": "fromDate",
+									"value": "2020-11-13%2000:00:00"
+								},
+								{
+									"key": "toDate",
+									"value": "2020-12-13%2017:55:47"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CancelByOwner",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODciLCJqdGkiOiIiLCJpYXQiOjE2MDgwMDQ1NTksImV4cCI6MTYwODA5MDk1OX0.xx0D0rHQPX4d3ovVJinT3DM4yJG7JUstR92QIUaQFyJrv1aeTkbN-JBeHzsvXj5aDXFlBWSnbfIUqsIpF47h_g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/report/getObjectCancelByOwner_mobile?fromDate=2020-11-13%2000:00:00&toDate=2020-12-13%2017:55:47",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"report",
+								"getObjectCancelByOwner_mobile"
+							],
+							"query": [
+								{
+									"key": "fromDate",
+									"value": "2020-11-13%2000:00:00"
+								},
+								{
+									"key": "toDate",
+									"value": "2020-12-13%2017:55:47"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cancel",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODciLCJqdGkiOiIiLCJpYXQiOjE2MDgwMDQ1NTksImV4cCI6MTYwODA5MDk1OX0.xx0D0rHQPX4d3ovVJinT3DM4yJG7JUstR92QIUaQFyJrv1aeTkbN-JBeHzsvXj5aDXFlBWSnbfIUqsIpF47h_g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/report/getObjectCancel_mobile?fromDate=2020-11-13%2000:00:00&toDate=2020-12-13%2017:55:47",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"report",
+								"getObjectCancel_mobile"
+							],
+							"query": [
+								{
+									"key": "fromDate",
+									"value": "2020-11-13%2000:00:00"
+								},
+								{
+									"key": "toDate",
+									"value": "2020-12-13%2017:55:47"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Feedback",
+			"item": [
+				{
+					"name": "Feedback",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/report/getObjectFeedback_mobile?fromDate=01-01-2021&toDate=23-02-2021",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"report",
+								"getObjectFeedback_mobile"
+							],
+							"query": [
+								{
+									"key": "fromDate",
+									"value": "01-01-2021"
+								},
+								{
+									"key": "toDate",
+									"value": "23-02-2021"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FeedbackByOwner",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODciLCJqdGkiOiIiLCJpYXQiOjE2MDgwMDQ1NTksImV4cCI6MTYwODA5MDk1OX0.xx0D0rHQPX4d3ovVJinT3DM4yJG7JUstR92QIUaQFyJrv1aeTkbN-JBeHzsvXj5aDXFlBWSnbfIUqsIpF47h_g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/report/getObjectFeedbackByOwner_mobile?fromDate=2020-11-13%2000:00:00&toDate=2020-12-13%2017:55:47",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"report",
+								"getObjectFeedbackByOwner_mobile"
+							],
+							"query": [
+								{
+									"key": "fromDate",
+									"value": "2020-11-13%2000:00:00"
+								},
+								{
+									"key": "toDate",
+									"value": "2020-12-13%2017:55:47"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FeedbackByAssigner",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODciLCJqdGkiOiIiLCJpYXQiOjE2MDgwMDQ1NTksImV4cCI6MTYwODA5MDk1OX0.xx0D0rHQPX4d3ovVJinT3DM4yJG7JUstR92QIUaQFyJrv1aeTkbN-JBeHzsvXj5aDXFlBWSnbfIUqsIpF47h_g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/report/getObjectFeedbackByAssigner_mobile?fromDate=2020-11-13%2000:00:00&toDate=2020-12-13%2017:55:47",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"report",
+								"getObjectFeedbackByAssigner_mobile"
+							],
+							"query": [
+								{
+									"key": "fromDate",
+									"value": "2020-11-13%2000:00:00"
+								},
+								{
+									"key": "toDate",
+									"value": "2020-12-13%2017:55:47"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FeedbackByFollower",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODciLCJqdGkiOiIiLCJpYXQiOjE2MDgwMDQ1NTksImV4cCI6MTYwODA5MDk1OX0.xx0D0rHQPX4d3ovVJinT3DM4yJG7JUstR92QIUaQFyJrv1aeTkbN-JBeHzsvXj5aDXFlBWSnbfIUqsIpF47h_g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/report/getObjectFeedbackByFollower_mobile?fromDate=2020-11-13%2000:00:00&toDate=2020-12-13%2017:55:47",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"report",
+								"getObjectFeedbackByFollower_mobile"
+							],
+							"query": [
+								{
+									"key": "fromDate",
+									"value": "2020-11-13%2000:00:00"
+								},
+								{
+									"key": "toDate",
+									"value": "2020-12-13%2017:55:47"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Finish",
+			"item": [
+				{
+					"name": "FinishOnTime",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODciLCJqdGkiOiIiLCJpYXQiOjE2MDgwMDQ1NTksImV4cCI6MTYwODA5MDk1OX0.xx0D0rHQPX4d3ovVJinT3DM4yJG7JUstR92QIUaQFyJrv1aeTkbN-JBeHzsvXj5aDXFlBWSnbfIUqsIpF47h_g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{pageURL}}/report/getObjectFinishOnTime_mobile?fromDate=2020-11-13%2000:00:00&toDate=2020-12-13%2017:55:47",
+							"host": [
+								"{{pageURL}}"
+							],
+							"path": [
+								"report",
+								"getObjectFinishOnTime_mobile"
+							],
+							"query": [
+								{
+									"key": "fromDate",
+									"value": "2020-11-13%2000:00:00"
+								},
+								{
+									"key": "toDate",
+									"value": "2020-12-13%2017:55:47"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FinishOnTimeByOwner",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODciLCJqdGkiOiIiLCJpYXQiOjE2MDgwMDQ1NTksImV4cCI6MTYwODA5MDk1OX0.xx0D0rHQPX4d3ovVJinT3DM4yJG7JUstR92QIUaQFyJrv1aeTkbN-JBeHzsvXj5aDXFlBWSnbfIUqsIpF47h_g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{pageURL}}/report/getObjectFinishOnTimeByOwner_mobile?fromDate=2020-11-13%2000:00:00&toDate=2020-12-13%2017:55:47",
+							"host": [
+								"{{pageURL}}"
+							],
+							"path": [
+								"report",
+								"getObjectFinishOnTimeByOwner_mobile"
+							],
+							"query": [
+								{
+									"key": "fromDate",
+									"value": "2020-11-13%2000:00:00"
+								},
+								{
+									"key": "toDate",
+									"value": "2020-12-13%2017:55:47"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FinishOnTimeByAssigner",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODciLCJqdGkiOiIiLCJpYXQiOjE2MDgwMDQ1NTksImV4cCI6MTYwODA5MDk1OX0.xx0D0rHQPX4d3ovVJinT3DM4yJG7JUstR92QIUaQFyJrv1aeTkbN-JBeHzsvXj5aDXFlBWSnbfIUqsIpF47h_g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{pageURL}}/report/getObjectFinishOnTimeByAssigner_mobile?fromDate=2020-11-13%2000:00:00&toDate=2020-12-13%2017:55:47",
+							"host": [
+								"{{pageURL}}"
+							],
+							"path": [
+								"report",
+								"getObjectFinishOnTimeByAssigner_mobile"
+							],
+							"query": [
+								{
+									"key": "fromDate",
+									"value": "2020-11-13%2000:00:00"
+								},
+								{
+									"key": "toDate",
+									"value": "2020-12-13%2017:55:47"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FinishOnTimeByFollower",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODciLCJqdGkiOiIiLCJpYXQiOjE2MDgwMDQ1NTksImV4cCI6MTYwODA5MDk1OX0.xx0D0rHQPX4d3ovVJinT3DM4yJG7JUstR92QIUaQFyJrv1aeTkbN-JBeHzsvXj5aDXFlBWSnbfIUqsIpF47h_g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{pageURL}}/report/getObjectFinishOnTimeByFollower_mobile?fromDate=2020-11-13%2000:00:00&toDate=2020-12-13%2017:55:47",
+							"host": [
+								"{{pageURL}}"
+							],
+							"path": [
+								"report",
+								"getObjectFinishOnTimeByFollower_mobile"
+							],
+							"query": [
+								{
+									"key": "fromDate",
+									"value": "2020-11-13%2000:00:00"
+								},
+								{
+									"key": "toDate",
+									"value": "2020-12-13%2017:55:47"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FinishOverdueByFollower",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODciLCJqdGkiOiIiLCJpYXQiOjE2MDgwMDQ1NTksImV4cCI6MTYwODA5MDk1OX0.xx0D0rHQPX4d3ovVJinT3DM4yJG7JUstR92QIUaQFyJrv1aeTkbN-JBeHzsvXj5aDXFlBWSnbfIUqsIpF47h_g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{pageURL}}/report/getObjectFinishOverdueByFollower_mobile?fromDate=2020-11-13%2000:00:00&toDate=2020-12-13%2017:55:47",
+							"host": [
+								"{{pageURL}}"
+							],
+							"path": [
+								"report",
+								"getObjectFinishOverdueByFollower_mobile"
+							],
+							"query": [
+								{
+									"key": "fromDate",
+									"value": "2020-11-13%2000:00:00"
+								},
+								{
+									"key": "toDate",
+									"value": "2020-12-13%2017:55:47"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FinishOverdueByAssigner",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODciLCJqdGkiOiIiLCJpYXQiOjE2MDgwMDQ1NTksImV4cCI6MTYwODA5MDk1OX0.xx0D0rHQPX4d3ovVJinT3DM4yJG7JUstR92QIUaQFyJrv1aeTkbN-JBeHzsvXj5aDXFlBWSnbfIUqsIpF47h_g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{pageURL}}/report/getObjectFinishOverdueByAssigner_mobile?fromDate=2020-11-13%2000:00:00&toDate=2020-12-13%2017:55:47",
+							"host": [
+								"{{pageURL}}"
+							],
+							"path": [
+								"report",
+								"getObjectFinishOverdueByAssigner_mobile"
+							],
+							"query": [
+								{
+									"key": "fromDate",
+									"value": "2020-11-13%2000:00:00"
+								},
+								{
+									"key": "toDate",
+									"value": "2020-12-13%2017:55:47"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FinishOverdueByOwner",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODciLCJqdGkiOiIiLCJpYXQiOjE2MDgwMDQ1NTksImV4cCI6MTYwODA5MDk1OX0.xx0D0rHQPX4d3ovVJinT3DM4yJG7JUstR92QIUaQFyJrv1aeTkbN-JBeHzsvXj5aDXFlBWSnbfIUqsIpF47h_g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{pageURL}}/report/getObjectFinishOverdueByOwner_mobile?fromDate=2020-11-13%2000:00:00&toDate=2020-12-13%2017:55:47",
+							"host": [
+								"{{pageURL}}"
+							],
+							"path": [
+								"report",
+								"getObjectFinishOverdueByOwner_mobile"
+							],
+							"query": [
+								{
+									"key": "fromDate",
+									"value": "2020-11-13%2000:00:00"
+								},
+								{
+									"key": "toDate",
+									"value": "2020-12-13%2017:55:47"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FinishOverdue",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODciLCJqdGkiOiIiLCJpYXQiOjE2MDgwMDQ1NTksImV4cCI6MTYwODA5MDk1OX0.xx0D0rHQPX4d3ovVJinT3DM4yJG7JUstR92QIUaQFyJrv1aeTkbN-JBeHzsvXj5aDXFlBWSnbfIUqsIpF47h_g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{pageURL}}/report/getObjectFinishOverdue_mobile?fromDate=2020-11-13%2000:00:00&toDate=2020-12-13%2017:55:47",
+							"host": [
+								"{{pageURL}}"
+							],
+							"path": [
+								"report",
+								"getObjectFinishOverdue_mobile"
+							],
+							"query": [
+								{
+									"key": "fromDate",
+									"value": "2020-11-13%2000:00:00"
+								},
+								{
+									"key": "toDate",
+									"value": "2020-12-13%2017:55:47"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Issue Action",
+			"item": [
+				{
+					"name": "Create Issue",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODgiLCJqdGkiOiIiLCJpYXQiOjE2MDgyNzMzNDQsImV4cCI6MTYwODM1OTc0NH0.7COLVu69c-WauvOTbFs49AcPWxaWIhWlKNyZk8qhW8Wi78rkJh1hEScMJgce5gLiKSpFPf2ofrMDHJ4spyxWdw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"archived\":false,\r\n\"createdTime\": \"2020-12-11T02:08:49.376+0000\",\r\n\"createdUser\": \"hieufpt\",\r\n\"deleted\": false,\r\n\"effort\":null,\r\n\"taskId\": 2054,\r\n\"modifiedTime\": \"2020-12-09T09:36:51.085+0000\",\r\n\"modifiedUser\": \"hieufpt\",\r\n\"note\" :\"test Op1\",\r\n\"onTime\":null,\r\n\"result\":\"result oke\",\r\n\"tenantId\": 1,\r\n\"type\": \"Issue\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/results/new_mobile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"results",
+								"new_mobile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Issue",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODgiLCJqdGkiOiIiLCJpYXQiOjE2MDgwOTMwMDUsImV4cCI6MTYwODE3OTQwNX0.JVCTM0VpRVOzgBYX3CrKyRqeKL5bUVGHz0xFPD6cTSKUprJQAVbDftV4CqAo2xU9DKM0kO2wKMVUvESugYccQA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"archived\":false,\r\n\"createdTime\": \"2020-12-11T02:08:49.376+0000\",\r\n\"createdUser\": \"hieufpt\",\r\n\"deleted\": false,\r\n\"effort\":null,\r\n\"id\": 842,\r\n\"modifiedTime\": \"2020-12-09T09:36:51.085+0000\",\r\n\"modifiedUser\": \"hieufpt\",\r\n\"note\" :\"test Op111\",\r\n\"onTime\":null,\r\n\"result\":\"result okenhanha\",\r\n\"tenantId\": 1,\r\n\"type\": \"Issue\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/results/thisResult_mobile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"results",
+								"thisResult_mobile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Issue",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODgiLCJqdGkiOiIiLCJpYXQiOjE2MDc2NTMyMDgsImV4cCI6MTYwNzczOTYwOH0.-myr5VH3mMyfvwwKUs3_VUagbGq221ol4kaqjTa2aAd6YbTyVApZ3I8Ue7QdFGjmS-y_JLcXirj8t2r7RkKe7Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"id\":841\r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/results/delete_mobile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"results",
+								"delete_mobile"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Checklist Action",
+			"item": [
+				{
+					"name": "Tạo Checklist",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODgiLCJqdGkiOiIiLCJpYXQiOjE2MDgwOTMwMDUsImV4cCI6MTYwODE3OTQwNX0.JVCTM0VpRVOzgBYX3CrKyRqeKL5bUVGHz0xFPD6cTSKUprJQAVbDftV4CqAo2xU9DKM0kO2wKMVUvESugYccQA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"createdTime\": \"2020-12-14T10:01:06.008+0000\",\r\n\"createdUser\": \"hieufpt\",\r\n\"deleted\": false,\r\n\"modifiedTime\": \"2020-12-14T10:01:06.008+0000\",\r\n\"modifiedUser\": \"hieufpt\",\r\n\"tenantId\": 1,\r\n\"taskId\": 2054,\r\n\"type\": \"defautl\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/component/create_mobile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"component",
+								"create_mobile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Tạo Radio Button của Checklist",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODgiLCJqdGkiOiIiLCJpYXQiOjE2MDgwOTE4NTEsImV4cCI6MTYwODE3ODI1MX0.nKQQPJNnWTeiDkppFRclz__lsi4DXSJym4avY39e-QztIAgZqRnukIZiWTWdd0RKVgOVCnmqD2ITJkeGjZptxA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"checked\":false,\r\n    \"componentId\":239,\r\n    \"createdTime\":null,\r\n    \"createdUser\":\"hieufpt\",\r\n    \"deadline\":\"2020-12-15T06:00:00.000+0000\",\r\n    \"deleted\":false,\r\n    \"id\":253,\r\n    \"modifiedTime\":\"2020-12-09T08:43:52.526+0000\",\r\n    \"modifiedUser\":\"hieufpt\",\r\n    \"name\":\"testokedel21111\",\r\n    \"tenanId\":1   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/checklist/create_mobile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"checklist",
+								"create_mobile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Radio Button của Checklist",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODgiLCJqdGkiOiIiLCJpYXQiOjE2MDgwOTMwMDUsImV4cCI6MTYwODE3OTQwNX0.JVCTM0VpRVOzgBYX3CrKyRqeKL5bUVGHz0xFPD6cTSKUprJQAVbDftV4CqAo2xU9DKM0kO2wKMVUvESugYccQA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"checked\":false,\r\n    \"componentId\":351,\r\n    \"createdTime\":null,\r\n    \"createdUser\":\"hieufpt\",\r\n    \"deadline\":\"2020-12-15T06:00:00.000+0000\",\r\n    \"deleted\":false,\r\n    \"id\":264,\r\n    \"modifiedTime\":\"2020-12-09T08:43:52.526+0000\",\r\n    \"modifiedUser\":\"hieufpt\",\r\n    \"name\":\"1231231231231\",\r\n    \"tenanId\":1   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/checklist/update_mobile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"checklist",
+								"update_mobile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Checklist",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"createdTime\": null,\r\n\"createdUser\": \"hoah2@fpt.com.vn\",\r\n\"deleted\": false,\r\n\"id\": 147883,\r\n\"modifiedTime\": \"2020-12-09T09:36:51.085+0000\",\r\n\"modifiedUser\": \"hoah2@fpt.com.vn\",\r\n\"name\": \"Giao dien 2\",\r\n\"tenantId\": 1,\r\n\"type\": \"defautl\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/component/update_mobile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"component",
+								"update_mobile"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Result Action",
+			"item": [
+				{
+					"name": "Create Result",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODgiLCJqdGkiOiIiLCJpYXQiOjE2MDgwOTMwMDUsImV4cCI6MTYwODE3OTQwNX0.JVCTM0VpRVOzgBYX3CrKyRqeKL5bUVGHz0xFPD6cTSKUprJQAVbDftV4CqAo2xU9DKM0kO2wKMVUvESugYccQA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"archived\":false,\r\n\"createdTime\": \"2020-12-11T02:08:49.376+0000\",\r\n\"createdUser\": \"hieufpt\",\r\n\"deleted\": false,\r\n\"effort\":2,\r\n\"taskId\": 2059,\r\n\"modifiedTime\": \"2020-12-09T09:36:51.085+0000\",\r\n\"modifiedUser\": \"hieufpt\",\r\n\"note\" :\"test91\",\r\n\"onTime\":null,\r\n\"result\":\"result91\",\r\n\"tenantId\": 1,\r\n\"type\": \"normal\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/results/new_mobile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"results",
+								"new_mobile"
+							]
+						},
+						"description": "Tạo result single"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Result",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODgiLCJqdGkiOiIiLCJpYXQiOjE2MDc2NTMyMDgsImV4cCI6MTYwNzczOTYwOH0.-myr5VH3mMyfvwwKUs3_VUagbGq221ol4kaqjTa2aAd6YbTyVApZ3I8Ue7QdFGjmS-y_JLcXirj8t2r7RkKe7Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"id\":841\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/results/delete_mobile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"results",
+								"delete_mobile"
+							]
+						},
+						"description": "Delete Result theo ID Result"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Result",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODgiLCJqdGkiOiIiLCJpYXQiOjE2MDgwOTMwMDUsImV4cCI6MTYwODE3OTQwNX0.JVCTM0VpRVOzgBYX3CrKyRqeKL5bUVGHz0xFPD6cTSKUprJQAVbDftV4CqAo2xU9DKM0kO2wKMVUvESugYccQA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"archived\": false,\r\n\"createdTime\": \"2020-12-11T02:08:49.000+0000\",\r\n\"createdUser\": \"hieufpt\",\r\n\"deleted\": false,\r\n\"effort\": 2,\r\n\"id\": 861,\r\n\"modifiedTime\": \"2020-12-09T09:36:51.000+0000\",\r\n\"modifiedUser\": \"hieufpt\",\r\n\"note\": \"test911\",\r\n\"onTime\": null,\r\n\"result\": \"result911\",\r\n\"tenantId\": 1,\r\n\"type\": \"normal\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/results/thisResult_mobile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"results",
+								"thisResult_mobile"
+							]
+						},
+						"description": "Update Result"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Task Detail",
+			"item": [
+				{
+					"name": "Get info of Task By TaskId",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/task/getOne_mobile?id=2055",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"task",
+								"getOne_mobile"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2055"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Checklist By TaskId",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODgiLCJqdGkiOiIiLCJpYXQiOjE2MDgwODg2ODksImV4cCI6MTYwODE3NTA4OX0.nc-JEUz2hvNEsPZpwivckodMjeyPg8c-8qQoVImdTgKVy1klXwco77py1DnacJjYV2gJUTv0YSy8rxyi9Etj1g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/component/getByTaskId_mobile/?taskId=2058",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"component",
+								"getByTaskId_mobile",
+								""
+							],
+							"query": [
+								{
+									"key": "taskId",
+									"value": "2058"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Result By TaskId",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODgiLCJqdGkiOiIiLCJpYXQiOjE2MDgxODY1NzQsImV4cCI6MTYwODI3Mjk3NH0.kBY81GpovgDxAkEopkJPriuXM1qLvqFfQOO_8eEDdZVeoJPfTKwvravcpHhR2ZIbC83EYRLGDQ4GT9s6EhlY1Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/comment/getByTaskId_mobile/?taskId=2070",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"comment",
+								"getByTaskId_mobile",
+								""
+							],
+							"query": [
+								{
+									"key": "taskId",
+									"value": "2070"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Result(Issue) by Task Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODgiLCJqdGkiOiIiLCJpYXQiOjE2MDgxODY1NzQsImV4cCI6MTYwODI3Mjk3NH0.kBY81GpovgDxAkEopkJPriuXM1qLvqFfQOO_8eEDdZVeoJPfTKwvravcpHhR2ZIbC83EYRLGDQ4GT9s6EhlY1Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/results/resultByTask_mobile/?taskId=2058",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"results",
+								"resultByTask_mobile",
+								""
+							],
+							"query": [
+								{
+									"key": "taskId",
+									"value": "2058"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Comment By Task Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODgiLCJqdGkiOiIiLCJpYXQiOjE2MDgxODY1NzQsImV4cCI6MTYwODI3Mjk3NH0.kBY81GpovgDxAkEopkJPriuXM1qLvqFfQOO_8eEDdZVeoJPfTKwvravcpHhR2ZIbC83EYRLGDQ4GT9s6EhlY1Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/comment/getByTaskId_mobile/?taskId=2070",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"comment",
+								"getByTaskId_mobile",
+								""
+							],
+							"query": [
+								{
+									"key": "taskId",
+									"value": "2070"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Comment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODgiLCJqdGkiOiIiLCJpYXQiOjE2MDgxNzMxODYsImV4cCI6MTYwODI1OTU4Nn0.6fWImSXIxcWCzKE00M04CqFnMwlWXffs1ICTEqZMkP_SN49ZBxCpR8rIk7rPpfnrQF8gpAdMFmTbTamynCmKXw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"id\":431\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/comment/delete_mobile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"comment",
+								"delete_mobile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Description",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "108681",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "a\\nb",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/task/updateDescription_mobile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"task",
+								"updateDescription_mobile"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "108681",
+									"disabled": true
+								},
+								{
+									"key": "description",
+									"value": "aaa",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Comment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODgiLCJqdGkiOiIiLCJpYXQiOjE2MDgxNzMxODYsImV4cCI6MTYwODI1OTU4Nn0.6fWImSXIxcWCzKE00M04CqFnMwlWXffs1ICTEqZMkP_SN49ZBxCpR8rIk7rPpfnrQF8gpAdMFmTbTamynCmKXw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"content\": \"text\",\r\n\"deleted\":false,\r\n\"createdTime\": \"2020-12-17T02:55:06.351+0000\",\r\n\"usernameLowerCase\": \"hieufpt\",\r\n\"taskId\":2070\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/comment/addComment_mobile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"comment",
+								"addComment_mobile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Number Process",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODgiLCJqdGkiOiIiLCJpYXQiOjE2MDgyNTkwNTUsImV4cCI6MTYwODM0NTQ1NX0.1gbfLqpbsKR6RmuExaDUATOnHkVokPs3pnYLOyZCqxNWnTEE-6LCDxzVehjD5t0TKx0LIOPvP8hqOUngE7ePsA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/task/updateNumberProcess_mobible?id=2059&numberProcess=98",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"task",
+								"updateNumberProcess_mobible"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2059"
+								},
+								{
+									"key": "numberProcess",
+									"value": "98"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Label",
+			"item": [
+				{
+					"name": "GetLabel_mobile",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"action\":\"DELETE\",\r\n    \"parentType\":\"TASK\",\r\n    \"parentId\":2055\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/userLabel/getByUsernameLowerCase_mobile?usernameLowerCase=demo_test",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"userLabel",
+								"getByUsernameLowerCase_mobile"
+							],
+							"query": [
+								{
+									"key": "usernameLowerCase",
+									"value": "demo_test"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateLabel_mobile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODciLCJqdGkiOiIiLCJpYXQiOjE2MDgwODg2MzIsImV4cCI6MTYwODE3NTAzMn0.TLqcMLofsv5JmzhH3WFLGKVQ9JbgrgbmbJSZoanFJM0NGXyLSpLbbitqNTSs9ZgHWiRJqOnOtnx9zQvZFcDXIQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Label 1\",\r\n    \"color\": \"info\",\r\n    \"usernameLowerCase\": \"demo_test\",\r\n    \"deleted\": false,\r\n    \"tenantId\": null,\r\n    \"createdUser\": null,\r\n    \"createdTime\": null,\r\n    \"modifiedUser\": null,\r\n    \"modifiedTime\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/userLabel/create_mobile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"userLabel",
+								"create_mobile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateLabel",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODciLCJqdGkiOiIiLCJpYXQiOjE2MDgwODg2MzIsImV4cCI6MTYwODE3NTAzMn0.TLqcMLofsv5JmzhH3WFLGKVQ9JbgrgbmbJSZoanFJM0NGXyLSpLbbitqNTSs9ZgHWiRJqOnOtnx9zQvZFcDXIQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 103,\r\n    \"name\": \"Label 2\",\r\n    \"color\": \"info\",\r\n    \"usernameLowerCase\": \"demo_test\",\r\n    \"deleted\": false,\r\n    \"tenantId\": null,\r\n    \"createdUser\": null,\r\n    \"createdTime\": null,\r\n    \"modifiedUser\": null,\r\n    \"modifiedTime\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/userLabel/update_mobile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"userLabel",
+								"update_mobile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteLabel_mobile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODciLCJqdGkiOiIiLCJpYXQiOjE2MDgxNzUyMTksImV4cCI6MTYwODI2MTYxOX0.FlCOExonUeCzrAJXXjF6sEya1RlqIis3HBLuWG3yZPtPv9wBep5XABSWCzIvLelagdA1xksEfbRWG7B5i0P0mw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/userLabel/delete_mobile?id=95",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"userLabel",
+								"delete_mobile"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "95"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "InsertLabel_mobile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODciLCJqdGkiOiIiLCJpYXQiOjE2MDgxNzUyMTksImV4cCI6MTYwODI2MTYxOX0.FlCOExonUeCzrAJXXjF6sEya1RlqIis3HBLuWG3yZPtPv9wBep5XABSWCzIvLelagdA1xksEfbRWG7B5i0P0mw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"createdTime\": null,\r\n    \"createdUser\": \"demo_test\",\r\n    \"modifiedTime\": null,\r\n    \"modifiedUser\": null,\r\n    \"taskId\": 2055,\r\n    \"tenantId\": null,\r\n    \"userLabelId\": 96\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/taskUserLabel/create_mobile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"taskUserLabel",
+								"create_mobile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UninsertLabel_mobile",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODciLCJqdGkiOiIiLCJpYXQiOjE2MDgxNzUyMTksImV4cCI6MTYwODI2MTYxOX0.FlCOExonUeCzrAJXXjF6sEya1RlqIis3HBLuWG3yZPtPv9wBep5XABSWCzIvLelagdA1xksEfbRWG7B5i0P0mw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/taskUserLabel/deleteByTaskIdAndUserLabelId_mobile?taskId=2055&userLabelId=96",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"taskUserLabel",
+								"deleteByTaskIdAndUserLabelId_mobile"
+							],
+							"query": [
+								{
+									"key": "taskId",
+									"value": "2055"
+								},
+								{
+									"key": "userLabelId",
+									"value": "96"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Activities",
+			"item": [
+				{
+					"name": "GetActivities_mobile",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODciLCJqdGkiOiIiLCJpYXQiOjE2MDgwODg2MzIsImV4cCI6MTYwODE3NTAzMn0.TLqcMLofsv5JmzhH3WFLGKVQ9JbgrgbmbJSZoanFJM0NGXyLSpLbbitqNTSs9ZgHWiRJqOnOtnx9zQvZFcDXIQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 93\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/activity/getActivities_mobile?parentType=TASK&parentId=2055",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"activity",
+								"getActivities_mobile"
+							],
+							"query": [
+								{
+									"key": "parentType",
+									"value": "TASK"
+								},
+								{
+									"key": "parentId",
+									"value": "2055"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getNotification",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}activityUser/getByUsernameLowerCase_mobile?numberOfRecord=12",
+							"host": [
+								"{{baseUrl}}activityUser"
+							],
+							"path": [
+								"getByUsernameLowerCase_mobile"
+							],
+							"query": [
+								{
+									"key": "numberOfRecord",
+									"value": "12"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Attachments",
+			"item": [
+				{
+					"name": "GetAttachments_mobile",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODciLCJqdGkiOiIiLCJpYXQiOjE2MDgwODg2MzIsImV4cCI6MTYwODE3NTAzMn0.TLqcMLofsv5JmzhH3WFLGKVQ9JbgrgbmbJSZoanFJM0NGXyLSpLbbitqNTSs9ZgHWiRJqOnOtnx9zQvZFcDXIQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 98,\r\n    \"name\": \"demo label\",\r\n    \"color\": \"light-green\",\r\n    \"usernameLowerCase\": \"demo_test\",\r\n    \"deleted\": false,\r\n    \"tenantId\": null,\r\n    \"createdUser\": null,\r\n    \"createdTime\": \"2020-12-16T14:11:28.000+0000\",\r\n    \"modifiedUser\": null,\r\n    \"modifiedTime\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/attachment/getAttachments_mobile?parentType=TASK&parentId=2055",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"attachment",
+								"getAttachments_mobile"
+							],
+							"query": [
+								{
+									"key": "parentType",
+									"value": "TASK"
+								},
+								{
+									"key": "parentId",
+									"value": "2055"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddAttachment_mobile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODciLCJqdGkiOiIiLCJpYXQiOjE2MDgwODg2MzIsImV4cCI6MTYwODE3NTAzMn0.TLqcMLofsv5JmzhH3WFLGKVQ9JbgrgbmbJSZoanFJM0NGXyLSpLbbitqNTSs9ZgHWiRJqOnOtnx9zQvZFcDXIQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "parentType",
+									"value": "TASK",
+									"type": "text"
+								},
+								{
+									"key": "parentId",
+									"value": "2055",
+									"type": "text"
+								},
+								{
+									"key": "createdUser",
+									"value": "demo_test",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/attachment/addAttachment_mobile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"attachment",
+								"addAttachment_mobile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteAttachment_mobile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODciLCJqdGkiOiIiLCJpYXQiOjE2MDgxODY1OTAsImV4cCI6MTYwODI3Mjk5MH0.j1l0paW0B1KEIJ9ayrP57OP0UZuaxvYNOxK79ToUa6K860bnD1_PNi_bluW_y1rb0hVAlMXwnzBSbe15Kf5Arw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 306\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/attachment/deleteAttachment_mobile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"attachment",
+								"deleteAttachment_mobile"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "306",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "From me",
+			"item": [
+				{
+					"name": "Get Created Lists from me",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5OTciLCJqdGkiOiIiLCJpYXQiOjE2MDgxNzc3MzQsImV4cCI6MTYwODI2NDEzNH0.uobVJTKrqWXYu5iR2YmmuvmHtvPgA64FQf3D9gvZ7Ipg1FSLfTW36Dd1uS1-1er6p55pRTxUmCQ-RNK4MFLi5g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "createdUser",
+									"value": "khangmds",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/list/getCreatedLists_mobile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"list",
+								"getCreatedLists_mobile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Created Tasks from me",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5OTciLCJqdGkiOiIiLCJpYXQiOjE2MDgxNzc3MzQsImV4cCI6MTYwODI2NDEzNH0.uobVJTKrqWXYu5iR2YmmuvmHtvPgA64FQf3D9gvZ7Ipg1FSLfTW36Dd1uS1-1er6p55pRTxUmCQ-RNK4MFLi5g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "createdUser",
+									"value": "khangmds",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/task/getCreatedTasks_mobile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"task",
+								"getCreatedTasks_mobile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get assigned from me",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5OTciLCJqdGkiOiIiLCJpYXQiOjE2MDgxNzc3MzQsImV4cCI6MTYwODI2NDEzNH0.uobVJTKrqWXYu5iR2YmmuvmHtvPgA64FQf3D9gvZ7Ipg1FSLfTW36Dd1uS1-1er6p55pRTxUmCQ-RNK4MFLi5g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "khangmd1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/report/getAssignedNumberByCreatedUser_mobile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"report",
+								"getAssignedNumberByCreatedUser_mobile"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Action task",
+			"item": [
+				{
+					"name": "Action done task",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5OTAiLCJqdGkiOiIiLCJpYXQiOjE2MDc2NjIwNDgsImV4cCI6MTYwNzc0ODQ0OH0.GuDUEYXZAZhJxpbXo9DjcQcFkK6P2p3ckgCqc4_W3AjqEgkmjAFvZ_HeH9VSuCS93-xC2R85BQfZsg-brGDo-g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":1981\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/task/doneTask_mobile?id=2055",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"task",
+								"doneTask_mobile"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2055"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Action close task",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5OTAiLCJqdGkiOiIiLCJpYXQiOjE2MDc2NjIwNDgsImV4cCI6MTYwNzc0ODQ0OH0.GuDUEYXZAZhJxpbXo9DjcQcFkK6P2p3ckgCqc4_W3AjqEgkmjAFvZ_HeH9VSuCS93-xC2R85BQfZsg-brGDo-g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"id\": 1984,\n        \"implementer\": \"khangmds\",\n        \"modifiedUser\": \"khangmds\",\n        \"status\": \"CLOSED\",\n        \"taskId\": 2058  \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/status/updateStatus_mobile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"status",
+								"updateStatus_mobile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Action feedback",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5OTciLCJqdGkiOiIiLCJpYXQiOjE2MDgxNzc3MzQsImV4cCI6MTYwODI2NDEzNH0.uobVJTKrqWXYu5iR2YmmuvmHtvPgA64FQf3D9gvZ7Ipg1FSLfTW36Dd1uS1-1er6p55pRTxUmCQ-RNK4MFLi5g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"objectId\":2068,\n        \"content\":\"ok\",\n        \"implementer\":\"khangmd1\"\n        \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/task/feedback_mobile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"task",
+								"feedback_mobile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Action reopen task",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5OTciLCJqdGkiOiIiLCJpYXQiOjE2MDgxNzc3MzQsImV4cCI6MTYwODI2NDEzNH0.uobVJTKrqWXYu5iR2YmmuvmHtvPgA64FQf3D9gvZ7Ipg1FSLfTW36Dd1uS1-1er6p55pRTxUmCQ-RNK4MFLi5g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "2071",
+									"type": "text"
+								},
+								{
+									"key": "owner",
+									"value": "khangmd1",
+									"type": "text"
+								},
+								{
+									"key": "deadline",
+									"value": "2020-12-21 17:16:15",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/task/reopenTask_mobile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"task",
+								"reopenTask_mobile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Action accep task",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5OTciLCJqdGkiOiIiLCJpYXQiOjE2MDgxNzc3MzQsImV4cCI6MTYwODI2NDEzNH0.uobVJTKrqWXYu5iR2YmmuvmHtvPgA64FQf3D9gvZ7Ipg1FSLfTW36Dd1uS1-1er6p55pRTxUmCQ-RNK4MFLi5g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "2068",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/task/acceptTask_mobile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"task",
+								"acceptTask_mobile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Action changeOwner",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5OTciLCJqdGkiOiIiLCJpYXQiOjE2MDgxNzc3MzQsImV4cCI6MTYwODI2NDEzNH0.uobVJTKrqWXYu5iR2YmmuvmHtvPgA64FQf3D9gvZ7Ipg1FSLfTW36Dd1uS1-1er6p55pRTxUmCQ-RNK4MFLi5g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"taskId\": 2061,\n        \"owner\": \"khangmd1_khangmd1\",\n        \"oldOwner\": \"khangmd2_khangmd2\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/task/changeOwner_mobile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"task",
+								"changeOwner_mobile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Action create task member",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5OTYiLCJqdGkiOiIiLCJpYXQiOjE2MDgxMDQ2MTMsImV4cCI6MTYwODE5MTAxM30.TIINFvMmHtQiECgF_9eXiubSjuIDZ_GCndA31xeIaHO3oOhNF576PLB82bLvMeZ4dAKBnC5_1ntomm_gIIdBUQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"createdTime\": \"2020-12-16T08:23:38.000+0000\",\n    \"createdUser\": \"hieudt999\",\n    \"deleted\": false,\n    \"id\": 5392,\n    \"member\": \"khangmd2_khangmd2\",\n    \"modifiedTime\": \"2020-12-16T08:24:54.841+0000\",\n    \"modifiedUser\": \"hieudt999\",\n    \"taskId\": 2063,\n    \"taskRoleTypeId\": 3,\n    \"usernameLowerCase\": \"khangmd2_khangmd2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/taskUserRole/create_mobile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"taskUserRole",
+								"create_mobile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Action update Role member",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5OTYiLCJqdGkiOiIiLCJpYXQiOjE2MDgxMDQ2MTMsImV4cCI6MTYwODE5MTAxM30.TIINFvMmHtQiECgF_9eXiubSjuIDZ_GCndA31xeIaHO3oOhNF576PLB82bLvMeZ4dAKBnC5_1ntomm_gIIdBUQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"roleTypeId\": 2,\n    \"userRoleId\": 5395\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/taskUserRole/updateRole_mobile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"taskUserRole",
+								"updateRole_mobile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Action delete task member",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5OTYiLCJqdGkiOiIiLCJpYXQiOjE2MDgxMDQ2MTMsImV4cCI6MTYwODE5MTAxM30.TIINFvMmHtQiECgF_9eXiubSjuIDZ_GCndA31xeIaHO3oOhNF576PLB82bLvMeZ4dAKBnC5_1ntomm_gIIdBUQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"roleTypeId\": 2,\n    \"userRoleId\": 5395\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/taskUserRole/updateRole_mobile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"taskUserRole",
+								"updateRole_mobile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Action task User Role",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5OTciLCJqdGkiOiIiLCJpYXQiOjE2MDgyNjIxMTIsImV4cCI6MTYwODM0ODUxMn0.iNOw79VUvllrKARQ4dow-i01B56S5Efv7FNeX1RWCpSFpZo35FaaimgshJtFd7vy78MEuB1JpzLK7a_ltJb7Zw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"username\":\"khangmd1\",\n\"password\":12345678\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/taskUserRole/delete_mobile?id=5398",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"taskUserRole",
+								"delete_mobile"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "5398"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Create task",
+			"item": [
+				{
+					"name": "Action create task",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\n\n\n{ \"acceptTime\": null,\n    \"archived\": null,\n    \"complexity\": 1,\n    \"createdTime\": \"29-02-2021\",\n    \"createdUser\": \"lanvt14@fpt.com.vn\",\n    \"dateReport\": \"\",\n    \"deadline\": 1614560400000,\n    \"deleted\": false,\n    \"description\": \"\",\n    \"done\": false,\n    \"doneTime\": null,\n    \"modifiedTime\": \"29-02-2021\",\n    \"modifiedUser\": \"lanvt14@fpt.com.vn\",\n    \"name\": \"testtt\",\n    \"numberProcess\": 0,\n    \"owner\": \"NhuBQ@fpt.com.vn\",\n    \"periodReport\": \"Weekly\",\n    \"result\": \"\",\n    \"startTime\": null,\n    \"statusColor\": \"\",\n    \"tenantId\": 1,\n    \"priority\": 1,\n    \"listId\": 21135 \n    \n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/task/create_mobile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"task",
+								"create_mobile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Action get board",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/board/getBoardAndListByUsername_mobile?username=lanvt14@fpt.com.vn",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"board",
+								"getBoardAndListByUsername_mobile"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "lanvt14@fpt.com.vn"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetBoardAndList",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/board/getBoardAndListByUsername_mobile?username=hieutt@fpt.com.vn",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"board",
+								"getBoardAndListByUsername_mobile"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "hieutt@fpt.com.vn"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Action Create Quick Task",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5OTAiLCJqdGkiOiIiLCJpYXQiOjE2MDc1ODQ3ODEsImV4cCI6MTYwNzY3MTE4MX0.DmNLM9zU0bscWDlfNn2CPWoGClxpbk0mjo150jUoDrZZPlS58UDEG6_Yj3xo2i0jfNIKDzvw2xFnvk5RB4kpOw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n        \"acceptTime\": null,\n        \"archived\": null,\n        \"complexity\": 1,\n        \"createdTime\": \"2020-12-10T02:58:00.753+0000\",\n        \"createdUser\": \"khangmds\",\n        \"dateReport\": null,\n        \"deadline\": \"2020-12-14T12:00:00.000+0000\",\n        \"deleted\": false,\n        \"description\": \"\",\n        \"done\": false,\n        \"doneTime\": null,\n       \"id\": 107135,\n        \"listId\": 13777,\n        \"modifiedTime\": \"2020-12-10T02:58:00.753+0000\",\n        \"modifiedUser\": \"khangmd@fpt.com.vn\",\n        \"name\": \"test6\",\n        \"numberProcess\": 0,\n        \"owner\": \"hieudt41@fpt.com.vn\",\n        \"periodReport\": \"Weekly\",\n        \"priority\": 1,\n        \"resTime\": \"2020-12-10T04:58:01.215+0000\",\n        \"result\": \"\",\n        \"startTime\": null,\n        \"status\": null,\n        \n        \"tenantId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/task/createTaskIntoListDefault_mobile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"task",
+								"createTaskIntoListDefault_mobile"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "To me",
+			"item": [
+				{
+					"name": "Get Assigned Lists to me",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "owner",
+									"value": "hoah2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/list/getAssignedLists_mobile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"list",
+								"getAssignedLists_mobile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Assigned Tasks to me",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "owner",
+									"value": "hoah2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/task/getAssignedTasks_mobile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"task",
+								"getAssignedTasks_mobile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Assigned Number to me",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "hoah2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/report/getAssignedNumber_mobile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"report",
+								"getAssignedNumber_mobile"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ConfigApp",
+			"item": [
+				{
+					"name": "Get Config App",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://verification-server.spro.eiss.vn/systemProperty/findSystemPropertyByCode?code=e4e4edf7",
+							"protocol": "https",
+							"host": [
+								"verification-server",
+								"spro",
+								"eiss",
+								"vn"
+							],
+							"path": [
+								"systemProperty",
+								"findSystemPropertyByCode"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "e4e4edf7"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Config App",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n     \"urlSpro\":\"http://10.21.51.131\",\n     \"urlSflash\":\"\",\n     \"backgroundUrl\":\"https://i.pinimg.com/564x/b5/3f/f8/b53ff8e48d14bbbc2598d65253857465.jpg\",\n     \"logoUrl\":\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQMjXsBCxk2FkgfV8xY_fPEopeQA5NYeiB9g&usqp=CAU\",\n     \"taskbarColor\":\"#F7931B\"\n}"
+						},
+						"url": {
+							"raw": "https://verification-server.spro.eiss.vn/systemProperty/created",
+							"protocol": "https",
+							"host": [
+								"verification-server",
+								"spro",
+								"eiss",
+								"vn"
+							],
+							"path": [
+								"systemProperty",
+								"created"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CountTaskDaily",
+			"item": [
+				{
+					"name": "CountTaskDaily",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/report/countTask_mobile?fromDate=2021-04-06%2000:00:00&toDate=2021-04-08%2023:59:00&type=MYSELF",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"report",
+								"countTask_mobile"
+							],
+							"query": [
+								{
+									"key": "fromDate",
+									"value": "2021-04-06%2000:00:00"
+								},
+								{
+									"key": "toDate",
+									"value": "2021-04-08%2023:59:00"
+								},
+								{
+									"key": "type",
+									"value": "MYSELF"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"hoah2@fpt.com.vn\",\r\n    \"password\":\"121212Qq.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mobile-server.sflash.eiss.vn/login",
+					"protocol": "https",
+					"host": [
+						"mobile-server",
+						"sflash",
+						"eiss",
+						"vn"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Api get url",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://verification-server.spro.eiss.vn/systemProperty/findSystemPropertyByCode?code=726a4254",
+					"protocol": "https",
+					"host": [
+						"verification-server",
+						"spro",
+						"eiss",
+						"vn"
+					],
+					"path": [
+						"systemProperty",
+						"findSystemPropertyByCode"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "726a4254"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODc5ODgiLCJqdGkiOiIiLCJpYXQiOjE2MDc4NDk1MjgsImV4cCI6MTYwNzkzNTkyOH0.YT0jBMyRpwnsnWmyaInu7xfg4S2xk3Urp3rkUSy1c7Sd0dixeRLy_7etqr00OEDJ9QDHsvm12M68F6-dqzSirA",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
